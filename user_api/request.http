@@ -1,0 +1,13 @@
+POST http://localhost:8080/attempts/61ca0a8206a63e44d98c0ad6/submit
+content-type: application/json
+
+{
+    "5f6bb98acc65b72a7c5b1ea7" : 0,
+    "5f6bba1a44470627f8773da6" : 2,
+    "5f6bb9db08aa20381c380708" : 2,
+    "5f6bb465933d010004ef1b13" : 0,
+    "5f6bb8cbd8d2fe3bf4028283" : 0
+}
+
+###
+POST http://localhost:8080/attempts

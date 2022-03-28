@@ -1,0 +1,48 @@
+
+###
+#UC1: get all questions
+#checked
+GET http://127.0.0.1:3001/questions
+
+###
+#UC2: create a new question
+#checked
+POST http://localhost:3001/questions
+Content-Type: application/json
+
+{
+    "text" : "1+1=?",
+    "answers" : [
+        "0",
+        "1",
+        "2"
+    ],
+    "correctAnswer" : 2
+}
+
+###
+#UC3: get details of a question
+#checked
+GET http://localhost:3001/questions/5f6bb465933d010004ef1b13
+
+###
+#UC4: update a question
+PUT http://localhost:3001/questions/5f6bb465933d010004ef1b13
+Content-Type: application/json
+
+{
+    "text" : "1+1=?",
+    "answers" : [
+        "0",
+        "1",
+        "2"
+    ],
+    "correctAnswer" : 2
+}
+
+###
+#uc5: delete a question
+DELETE http://localhost:3001/questions/5f6bb465933d010004ef1b13
+
+
+
